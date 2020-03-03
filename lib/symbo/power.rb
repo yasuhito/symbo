@@ -164,6 +164,7 @@ module Symbo
     #
     # rubocop:disable Metrics/PerceivedComplexity
     # rubocop:disable Metrics/CyclomaticComplexity
+    # rubocop:disable Metrics/AbcSize
     def simplify_eulers_formula
       if exponent.product? &&
          exponent.operand(0).is_a?(Complex) && exponent.operand(0).real.zero? &&
@@ -183,6 +184,7 @@ module Symbo
     end
     # rubocop:enable Metrics/PerceivedComplexity
     # rubocop:enable Metrics/CyclomaticComplexity
+    # rubocop:enable Metrics/AbcSize
 
     def simplify_rne_rec
       v = base.simplify_rne_rec
