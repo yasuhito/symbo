@@ -133,6 +133,7 @@ module Symbo
     # rubocop:enable Metrics/AbcSize
 
     # rubocop:disable Metrics/CyclomaticComplexity
+    # rubocop:disable Metrics/AbcSize
     def simplify_integer_power
       return Power[base, exponent].simplify_rne if base.constant?
       return 1 if exponent.zero?
@@ -157,6 +158,7 @@ module Symbo
       end
     end
     # rubocop:enable Metrics/CyclomaticComplexity
+    # rubocop:enable Metrics/AbcSize
 
     # e^ix = cos(x) + sin(x)
     #
