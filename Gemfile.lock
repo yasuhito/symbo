@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    symbo (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -46,10 +51,12 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  bundler
   rake
   rubocop
   simplecov (~> 0.17.1)
   simplecov-html (~> 0.10.0)
+  symbo!
 
 RUBY VERSION
    ruby 2.7.0p0

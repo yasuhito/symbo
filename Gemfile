@@ -3,8 +3,9 @@
 source 'https://rubygems.org'
 ruby '2.7.0'
 
+gemspec
+
 group :development do
-  gem 'rake'
   gem 'rubocop'
 end
 

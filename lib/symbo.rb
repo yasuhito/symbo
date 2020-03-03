@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "symbo/version"
+
 require 'symbo/integer'
 require 'symbo/symbol'
 
