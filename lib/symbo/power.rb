@@ -3,7 +3,6 @@
 require 'symbo/expression'
 
 module Symbo
-  # シンボリックなべき乗
   class Power < Expression
     using Symbo
 
