@@ -69,6 +69,14 @@ class MyClass
 end
 ```
 
+### Supported Operations and Expressions
+
+* `+`, `-`, `*`, `/`, `**`
+* Integers, fractions, complex numbers, variables, e (the base of the natural logarithm) and π
+* Trigonometric functions (cos(x) and sin(x)) and anonymous functions (e.g. f(x), g(x))
+* Matrices and vectors
+* Qubit and bra-ket vectors
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
