@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'symbo/algebraic_operators'
 require 'symbo/constant'
 require 'symbo/expression_type'
 

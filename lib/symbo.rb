@@ -1,14 +1,10 @@
 # frozen_string_literal: true
 
-require "symbo/version"
-
-require 'symbo/integer'
-require 'symbo/symbol'
-
 require 'symbo/complex'
 require 'symbo/cos'
 require 'symbo/diff'
 require 'symbo/e'
+require 'symbo/integer'
 require 'symbo/matrix'
 require 'symbo/pi'
 require 'symbo/power'
@@ -18,4 +14,6 @@ require 'symbo/quot'
 require 'symbo/sin'
 require 'symbo/sqrt'
 require 'symbo/sum'
+require 'symbo/symbol'
 require 'symbo/tensor_product'
+require 'symbo/version'
