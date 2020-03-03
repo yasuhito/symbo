@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Yasuhito Takamiya']
   spec.email         = ['yasuhito@gmail.com']
 
-  spec.summary       = 'A simple CAS (computer algebra system) in Ruby'
+  spec.summary       = 'A simple symbolic computation library in Ruby'
   spec.homepage      = 'https://github.com/yasuhito/symbo'
   spec.license       = 'MIT'
 
