@@ -103,7 +103,11 @@ module Symbo
     # rubocop:enable Metrics/AbcSize
 
     def to_s
-      "#{base}^(#{exponent})"
+      if exponent.integer? && exponent.positive?
+        "#{base}^#{exponent}"
+      else
+        "#{base}^(#{exponent})"
+      end
     end
 
     protected
