@@ -33,7 +33,7 @@ irb> ((1/√(2))**2).simplify.to_s
 ```
 # ((x·y)^(1/2) * z^2)^2 # => x·y·z^4
 irb> (((:x * :y)**(1/2) * :z**2)**2).simplify.to_s
-=> "x*y*z^(4)"
+=> "x*y*z^4"
 ```
 
 ## Installation
