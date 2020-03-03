@@ -103,7 +103,7 @@ module Symbo
     # rubocop:enable Metrics/AbcSize
 
     def to_s
-      if exponent.to_s.length == 1
+      if exponent.integer? && exponent.positive?
         "#{base}^#{exponent}"
       else
         "#{base}^(#{exponent})"

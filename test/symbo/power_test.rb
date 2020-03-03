@@ -88,5 +88,15 @@ module Symbo
                      Power[Product[Power[Product[:x, :y], 1/2], Power[:z, 2]], 2].simplify
       end
     end
+
+    class ToStringTest < ActiveSupport::TestCase
+      test '(x^16).to_s = x^16' do
+        assert_equal 'x^16', (:x**16).to_s
+      end
+
+      test '(x^(-2)).to_s = x^(-2)' do
+        assert_equal 'x^(-2)', (:x**(-2)).to_s
+      end
+    end
   end
 end
