@@ -1,11 +1,12 @@
 *.gem
 *.rbc
 /.config
-/coverage/
 /InstalledFiles
+/coverage/
+/node_modules/
 /pkg/
-/spec/reports/
 /spec/examples.txt
+/spec/reports/
 /test/tmp/
 /test/version_tmp/
 /tmp/
