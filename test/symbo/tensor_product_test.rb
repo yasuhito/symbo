@@ -22,9 +22,12 @@ module Symbo
       assert_equal Matrix[[0], [0], [0], [1]], TensorProduct[Qubit['1'], Qubit['1']]
     end
 
-    test 'TensorProduct[X, I]' do
-      assert_equal Matrix[[0, 0, 1, 0], [0, 0, 0, 1], [1, 0, 0, 0], [0, 1, 0, 0]],
-                   TensorProduct[Matrix[[0, 1], [1, 0]], Matrix.I(2)]
+    test 'TensorProduct[Matrix[[1, 2], [3, 4]], Matrix[[5, 6], [7, 8]]]' do
+      assert_equal Matrix[[5, 6, 10, 12],
+                          [7, 8, 14, 16],
+                          [15, 18, 20, 24],
+                          [21, 24, 28, 32]],
+                   TensorProduct[Matrix[[1, 2], [3, 4]], Matrix[[5, 6], [7, 8]]]
     end
   end
 end
