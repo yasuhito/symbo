@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    symbo (0.1.0)
+    symbo (0.1.0pre)
 
 GEM
   remote: https://rubygems.org/
