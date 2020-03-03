@@ -2,7 +2,7 @@
 
 A simple symbolic computation library in Ruby
 
-## What is symbolic computation
+## What is symbolic computation?
 
 Numerical calculations using computers are approximate. For example, if you calculate the square root of 2 on a computer, the result is an approximation with numbers omitted, despite √2 being an infinitely irrational number.
 
@@ -54,7 +54,7 @@ Or install it yourself as:
 
 ## Usage
 
-Here is a simple sample code that uses symbolic computation. Load the required libraries with `require 'symbo'`. `include Symbo` allows operations and constants such as √ and π to be used. `using Symbo` replaces subsequent operations with symbolic operations by Symbo.
+Here is a simple sample code that uses Symbo. Load the required libraries with `require 'symbo'`. `include Symbo` allows operations and constants such as √ and π to be used. `using Symbo` replaces subsequent operations with symbolic operations by Symbo.
 
 ```ruby
 require 'symbo'
@@ -71,7 +71,7 @@ end
 
 ### Supported Operations and Expressions
 
-* `+`, `-`, `*`, `/`, `**`
+* `+`, `-`, `*`, `/`, `**`, `TensorProduct`
 * Integers, fractions, complex numbers, variables, e (the base of the natural logarithm) and π
 * Trigonometric functions (cos(x) and sin(x)) and anonymous functions (e.g. f(x), g(x))
 * Matrices and vectors
