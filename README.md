@@ -54,7 +54,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Here is a simple sample code that uses symbolic computation. Load the required libraries with `require 'symbo'`. `include Symbo` allows operations and constants such as √ and π to be used. `using Symbo` replaces subsequent operations with symbolic operations by Symbo.
+
+```ruby
+require 'symbo'
+
+class MyClass
+  include Symbo
+  using Symbo
+
+  # Your code goes here
+  # ...
+
+end
+```
 
 ## Development
 
