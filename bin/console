@@ -7,4 +7,6 @@ require 'symbo'
 
 using Symbo
 
+include Symbo # rubocop:disable Style/MixinUsage
+
 IRB.start(__FILE__)
