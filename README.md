@@ -71,7 +71,7 @@ end
 
 ### Supported Operations and Expressions
 
-* `+`, `-`, `*`, `/`, `**`(Power)
+* `+`, `-`, `*`, `/`, `**`
 * Integers, fractions, complex numbers, variables, e (the base of the natural logarithm) and π
 * Trigonometric functions (cos(x) and sin(x)) and anonymous functions (e.g. f(x), g(x))
 * Matrices and vectors
