@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
+require 'symbo/concerns/mergeable'
 require 'symbo/expression'
 require 'symbo/factorial'
 require 'symbo/function'
-require 'symbo/mergeable'
 require 'symbo/product'
 
 module Symbo
-  # シンボリックな和
   class Sum < Expression
     include Mergeable
 
