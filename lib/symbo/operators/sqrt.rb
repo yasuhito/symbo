@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'symbo/fraction'
+require 'symbo/expressions/fraction'
 require 'symbo/operators/power'
 
 module Symbo

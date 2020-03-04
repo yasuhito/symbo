@@ -2,10 +2,10 @@
 
 require 'test_helper'
 
-require 'symbo/function'
-require 'symbo/integer'
+require 'symbo/expressions/function'
+require 'symbo/expressions/integer'
+require 'symbo/expressions/symbol'
 require 'symbo/operators/product'
-require 'symbo/symbol'
 
 module Symbo
   class FunctionTest

@@ -3,8 +3,9 @@
 require 'symbo/concerns/algebraic_operators'
 require 'symbo/concerns/expression_type'
 require 'symbo/concerns/relational_operators'
-require 'symbo/integer'
-require 'symbo/symbol'
+require 'symbo/expressions/complex'
+require 'symbo/expressions/integer'
+require 'symbo/expressions/symbol'
 
 module Symbo
   UNDEFINED = :undefined
