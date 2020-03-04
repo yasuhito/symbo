@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'symbo/expressions/matrix'
+
 module Symbo
   class Gate
     include Symbo
