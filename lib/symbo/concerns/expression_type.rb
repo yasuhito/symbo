@@ -2,8 +2,6 @@
 
 module Symbo
   module ExpressionType
-    # :section: Expression Type Methods
-
     def undefined?
       self == UNDEFINED
     end

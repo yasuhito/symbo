@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'symbo/algebraic_operators'
-require 'symbo/expression_type'
+require 'symbo/concerns/expression_type'
 require 'symbo/relational_operators'
 
 module Symbo
