@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-require 'symbo/sqrt'
+require 'symbo/operators/sqrt'
 
 module Symbo
   class SqrtTest < ActiveSupport::TestCase

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'symbo/fraction'
-require 'symbo/power'
+require 'symbo/operators/power'
 
 module Symbo
   class Sqrt

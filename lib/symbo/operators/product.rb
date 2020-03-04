@@ -2,7 +2,7 @@
 
 require 'symbo/concerns/mergeable'
 require 'symbo/expression'
-require 'symbo/power'
+require 'symbo/operators/power'
 
 module Symbo
   class Product < Expression
