@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'symbo/concerns/mergeable'
 require 'symbo/expressions/expression'
 require 'symbo/expressions/function'
+require 'symbo/operators/concerns/mergeable'
 require 'symbo/operators/factorial'
 require 'symbo/operators/product'
 

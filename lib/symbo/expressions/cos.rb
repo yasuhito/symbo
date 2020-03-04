@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'symbo/trigonometric_function'
+require 'symbo/expressions/trigonometric_function'
 
 module Symbo
   class Cos < TrigonometricFunction
