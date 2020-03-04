@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'symbo/complex'
+require 'symbo/core_ext/complex'
 require 'symbo/core_ext/integer'
 require 'symbo/cos'
 require 'symbo/diff'

@@ -7,8 +7,8 @@ require 'symbo/expression_type'
 module Symbo
   refine Complex do
     include AlgebraicOperators
-    include ExpressionType
     include Constant
+    include ExpressionType
 
     def simplify
       dup
@@ -54,26 +54,5 @@ module Symbo
         "(#{real} + #{imag}i)"
       end
     end
-  end
-end
-
-# Matrix などの中で使われる Complex#+ などをハイジャック
-class Complex
-  include Symbo::Constant
-  include Symbo::ExpressionType
-
-  alias plus +
-  alias mult *
-
-  def +(other)
-    plus other
-  rescue TypeError
-    Symbo::Sum[self, other]
-  end
-
-  def *(other)
-    mult other
-  rescue TypeError
-    Symbo::Product[self, other]
   end
 end
