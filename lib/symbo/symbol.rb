@@ -91,12 +91,3 @@ module Symbo
     end
   end
 end
-
-# Matrix などの中で使われる Symbol#+ などをハイジャック
-class Symbol
-  include Symbo::ExpressionType
-
-  def +(other)
-    Symbo::Sum[self, other]
-  end
-end
