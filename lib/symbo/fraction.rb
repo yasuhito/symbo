@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'symbo/constant'
+require 'symbo/concerns/constant'
 
 module Symbo
   # Symbo fraction computation

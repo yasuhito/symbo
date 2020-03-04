@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require 'symbo/algebraic_operators'
+require 'symbo/concerns/algebraic_operators'
+require 'symbo/concerns/expression_type'
+require 'symbo/concerns/relational_operators'
 require 'symbo/integer'
-require 'symbo/relational_operators'
 require 'symbo/symbol'
 
 module Symbo

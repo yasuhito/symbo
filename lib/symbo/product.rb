@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
+require 'symbo/concerns/mergeable'
 require 'symbo/expression'
-require 'symbo/mergeable'
 require 'symbo/power'
 
 module Symbo

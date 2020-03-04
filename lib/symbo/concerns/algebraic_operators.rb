@@ -2,8 +2,6 @@
 
 module Symbo
   module AlgebraicOperators
-    using Symbo
-
     def +(other)
       Sum[self, other]
     end

@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'symbo/concerns/constant'
+require 'symbo/concerns/expression_type'
+
 class Integer
   alias plus +
   alias mult *

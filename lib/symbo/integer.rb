@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'symbo/algebraic_operators'
-require 'symbo/constant'
-require 'symbo/expression_type'
+require 'symbo/concerns/algebraic_operators'
+require 'symbo/concerns/constant'
+require 'symbo/concerns/expression_type'
 
 module Symbo
   refine Integer do
