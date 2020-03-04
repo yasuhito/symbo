@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'symbo/concerns/expression_type'
+require 'symbo/expressions/concerns/expression_type'
 
 class Symbol
   include Symbo::ExpressionType

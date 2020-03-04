@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'symbo/concerns/algebraic_operators'
-require 'symbo/concerns/constant'
-require 'symbo/concerns/expression_type'
+require 'symbo/expressions/concerns/algebraic_operators'
+require 'symbo/expressions/concerns/constant'
+require 'symbo/expressions/concerns/expression_type'
 
 module Symbo
   refine Complex do

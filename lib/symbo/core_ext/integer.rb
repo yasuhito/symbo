@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'symbo/concerns/constant'
-require 'symbo/concerns/expression_type'
+require 'symbo/expressions/concerns/constant'
+require 'symbo/expressions/concerns/expression_type'
 
 class Integer
   alias plus +
