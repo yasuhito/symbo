@@ -27,7 +27,7 @@ module Symbo
         end
       end
 
-      Qubit.rows((m * state).to_a)
+      Qubit.rows((m * state).simplify.to_a)
     end
     # rubocop:enable Metrics/AbcSize
     # rubocop:enable Metrics/CyclomaticComplexity
