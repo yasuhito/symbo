@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'symbo/function'
+require 'symbo/expressions/function'
 
 module Symbo
   class TrigonometricFunction < Function

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'symbo/integer'
-require 'symbo/symbol'
+require 'symbo/expressions/integer'
+require 'symbo/expressions/symbol'
 
 module Symbo
   # シンボリックな階乗

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'symbo/expression'
+require 'symbo/expressions/expression'
 
 module Symbo
   class Power < Expression

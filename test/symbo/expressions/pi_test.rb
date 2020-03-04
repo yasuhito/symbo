@@ -2,8 +2,8 @@
 
 require 'test_helper'
 
+require 'symbo/expressions/pi'
 require 'symbo/operators/product'
-require 'symbo/pi'
 
 module Symbo
   class PiTest < ActiveSupport::TestCase
