@@ -8,6 +8,15 @@ Style/AsciiComments:
 Style/Documentation:
   Enabled: false
 
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
 # 行の文字数を制限しない
 Layout/LineLength:
   Enabled: false

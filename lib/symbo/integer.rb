@@ -4,16 +4,14 @@ require 'symbo/algebraic_operators'
 require 'symbo/constant'
 require 'symbo/expression_type'
 
-# Symbolic computation
 module Symbo
-  # Integer refinements
   refine Integer do
     alias_method :mult, :*
     alias_method :div, :/
 
     include AlgebraicOperators
-    include ExpressionType
     include Constant
+    include ExpressionType
 
     def simplify
       self
@@ -101,26 +99,5 @@ module Symbo
     def simplify_rne_rec
       self
     end
-  end
-end
-
-# Matrix などの中で使われる Integer#+ などをハイジャック
-class Integer
-  include Symbo::Constant
-  include Symbo::ExpressionType
-
-  alias plus +
-  alias mult *
-
-  def +(other)
-    plus other
-  rescue TypeError
-    Symbo::Sum[self, other]
-  end
-
-  def *(other)
-    mult other
-  rescue TypeError
-    Symbo::Product[self, other]
   end
 end
