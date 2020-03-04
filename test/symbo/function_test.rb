@@ -4,7 +4,7 @@ require 'test_helper'
 
 require 'symbo/function'
 require 'symbo/integer'
-require 'symbo/product'
+require 'symbo/operators/product'
 require 'symbo/symbol'
 
 module Symbo

@@ -2,9 +2,9 @@
 
 require 'symbo/concerns/mergeable'
 require 'symbo/expression'
-require 'symbo/factorial'
 require 'symbo/function'
-require 'symbo/product'
+require 'symbo/operators/factorial'
+require 'symbo/operators/product'
 
 module Symbo
   class Sum < Expression

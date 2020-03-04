@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-require 'symbo/factorial'
+require 'symbo/operators/factorial'
 
 module Symbo
   class FactorialTest
