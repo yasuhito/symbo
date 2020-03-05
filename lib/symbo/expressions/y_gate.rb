@@ -8,4 +8,6 @@ module Symbo
       Matrix[[0, -1i], [1i, 0]]
     end
   end
+
+  Y = YGate.new.matrix
 end

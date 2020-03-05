@@ -29,5 +29,9 @@ module Symbo
     test 'Y|-i> = -|-i>' do
       assert_equal(-Qubit['-i'], YGate.new.apply(Qubit['-i'], 0))
     end
+
+    test 'Y(1)|00> = i|01>' do
+      assert_equal 1i * Qubit['01'], TensorProduct[I, Y] * Qubit['00']
+    end
   end
 end
