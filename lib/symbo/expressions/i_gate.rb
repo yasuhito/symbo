@@ -8,4 +8,6 @@ module Symbo
       Matrix.I(2)
     end
   end
+
+  I = IGate.new.matrix
 end
