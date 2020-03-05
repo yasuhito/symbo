@@ -8,4 +8,6 @@ module Symbo
       Matrix[[1, 0], [0, 1i]]
     end
   end
+
+  S = SGate.new.matrix
 end

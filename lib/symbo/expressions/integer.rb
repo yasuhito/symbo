@@ -8,6 +8,7 @@ module Symbo
   refine Integer do
     alias_method :mult, :*
     alias_method :div, :/
+    alias_method :pow, :**
 
     include AlgebraicOperators
     include Constant

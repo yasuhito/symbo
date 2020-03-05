@@ -12,8 +12,12 @@ module Symbo
     end
 
     def matrix
-      Matrix[[Cos[@theta/2], -1 * Sin[@theta/2]],
+      Matrix[[Cos[@theta/2], -Sin[@theta/2]],
              [Sin[@theta/2], Cos[@theta/2]]]
     end
+  end
+
+  def Ry(theta) # rubocop:disable Naming/MethodName
+    RyGate.new(theta).matrix
   end
 end

@@ -15,4 +15,8 @@ module Symbo
              [-1i * Sin[@theta/2], Cos[@theta/2]]]
     end
   end
+
+  def Rx(theta) # rubocop:disable Naming/MethodName
+    RxGate.new(theta).matrix
+  end
 end

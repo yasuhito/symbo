@@ -83,6 +83,10 @@ module Symbo
       map(&:simplify)
     end
 
+    def ==(other)
+      super other.simplify
+    end
+
     # rubocop:disable Metrics/PerceivedComplexity
     # rubocop:disable Metrics/CyclomaticComplexity
     # rubocop:disable Metrics/AbcSize

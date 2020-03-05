@@ -11,7 +11,7 @@ module Symbo
       if other.respond_to?(:to_matrix)
         (mult other.to_matrix).simplify
       else
-        mult other
+        mult(other).simplify
       end
     end
 
