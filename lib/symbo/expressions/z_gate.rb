@@ -8,4 +8,6 @@ module Symbo
       Matrix[[1, 0], [0, -1]]
     end
   end
+
+  Z = ZGate.new.matrix
 end
