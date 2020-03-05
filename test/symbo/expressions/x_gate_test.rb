@@ -30,6 +30,10 @@ module Symbo
       test 'X|-i> = -i|i>' do
         assert_equal(-1i * Qubit['i'], XGate.new.apply(Qubit['-i'], 0))
       end
+
+      test 'X(1)|00> = |01>' do
+        assert_equal Qubit['01'], TensorProduct[I, X] * Qubit['00']
+      end
     end
   end
 end
