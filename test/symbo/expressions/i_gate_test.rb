@@ -7,7 +7,6 @@ require 'symbo'
 module Symbo
   class IGateTest < ActiveSupport::TestCase
     using Symbo
-    include Symbo
 
     test 'I|0> = |0>' do
       assert_equal Qubit['0'], I * Qubit['0']
