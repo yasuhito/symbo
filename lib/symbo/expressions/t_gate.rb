@@ -10,4 +10,6 @@ module Symbo
       Matrix[[1, 0], [0, E**(1i * PI/4)]]
     end
   end
+
+  T = TGate.new.matrix
 end
