@@ -15,4 +15,8 @@ module Symbo
              [0, E**(1i * @theta)]]
     end
   end
+
+  def R1(theta) # rubocop:disable Naming/MethodName
+    R1Gate.new(theta).matrix
+  end
 end
