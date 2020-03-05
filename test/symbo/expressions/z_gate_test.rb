@@ -27,5 +27,9 @@ module Symbo
     test 'Z|-i> = |i>' do
       assert_equal Qubit['i'], ZGate.new.apply(Qubit['-i'], 0)
     end
+
+    test 'Z(1)|01> = -|01>' do
+      assert_equal(-Qubit['01'], TensorProduct[I, Z] * Qubit['01'])
+    end
   end
 end
