@@ -8,4 +8,6 @@ module Symbo
       Matrix[[0, 1], [1, 0]]
     end
   end
+
+  X = XGate.new.matrix
 end
