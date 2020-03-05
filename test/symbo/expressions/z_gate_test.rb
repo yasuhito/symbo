@@ -6,7 +6,6 @@ require 'symbo'
 
 module Symbo
   class ZGateTest < ActiveSupport::TestCase
-    include Symbo
     using Symbo
 
     test 'Z|0> = |0>' do

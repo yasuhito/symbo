@@ -8,7 +8,6 @@ module Symbo
   class XGateTest
     class BasicQubitTransitionTest < ActiveSupport::TestCase
       using Symbo
-      include Symbo
 
       test 'X|0> = |1>' do
         assert_equal Qubit['1'], X * Qubit['0']
