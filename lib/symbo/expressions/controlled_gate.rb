@@ -15,8 +15,6 @@ module Symbo
       Qubit.rows((matrix(Math.log2(state.row_size).to_i, target, control) * state).to_a)
     end
 
-    private
-
     # rubocop:disable Metrics/AbcSize
     # rubocop:disable Metrics/PerceivedComplexity
     def matrix(state_length, target, control)
@@ -35,10 +33,10 @@ module Symbo
         elsif each == target
           if zero_matrix
             zero_matrix = TensorProduct[zero_matrix, IGate.new.matrix]
-            one_matrix = TensorProduct[one_matrix, @gate.matrix]
+            one_matrix = TensorProduct[one_matrix, @gate]
           else
             zero_matrix = IGate.new.matrix
-            one_matrix = @gate.matrix
+            one_matrix = @gate
           end
         elsif zero_matrix
           zero_matrix = TensorProduct[zero_matrix, IGate.new.matrix]
@@ -53,5 +51,11 @@ module Symbo
     end
     # rubocop:enable Metrics/AbcSize
     # rubocop:enable Metrics/PerceivedComplexity
+  end
+
+  def Controlled(gate, length, control_target) # rubocop:disable Naming/MethodName
+    control = control_target.keys.first
+    target = control_target.values.first
+    ControlledGate.new(gate).matrix(length, target, control)
   end
 end
