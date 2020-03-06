@@ -102,7 +102,7 @@ module Symbo
       kets.inject('') do |result, each|
         coefficient = if each[0] == 1
                         ''
-                      elsif each[0].constant? || each[0].symbol? || each[0].power?
+                      elsif each[0].constant? || each[0].symbol? || each[0].power? || each[0].function?
                         each[0].to_s
                       elsif !each[0].product? && each[0].length > 1
                         "(#{each[0]})"

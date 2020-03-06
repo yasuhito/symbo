@@ -37,5 +37,9 @@ module Symbo
     def symbol?
       is_a?(Symbol)
     end
+
+    def function?
+      is_a?(Function)
+    end
   end
 end
