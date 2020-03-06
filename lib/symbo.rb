@@ -12,6 +12,7 @@ require 'symbo/operators/sqrt'
 require 'symbo/operators/sum'
 require 'symbo/operators/tensor_product'
 
+require 'symbo/expressions/ccnot_gate'
 require 'symbo/expressions/complex'
 require 'symbo/expressions/controlled_gate'
 require 'symbo/expressions/cos'
