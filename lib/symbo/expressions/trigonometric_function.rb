@@ -7,7 +7,7 @@ module Symbo
     using Symbo
 
     def x
-      @operands[1]
+      @operands[0]
     end
 
     def simplify
