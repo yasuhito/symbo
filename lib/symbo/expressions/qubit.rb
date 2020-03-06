@@ -96,7 +96,7 @@ module Symbo
 
       (0...row_size).each do |each|
         x = self[each, 0]
-        kets << [x, "|%0*b>" % [ket_length, each]] unless x.zero?
+        kets << [x, "|%0*b⟩" % [ket_length, each]] unless x.zero?
       end
 
       kets.inject('') do |result, each|
