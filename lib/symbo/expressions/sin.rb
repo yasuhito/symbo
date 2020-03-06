@@ -11,11 +11,11 @@ module Symbo
     end
 
     def initialize(x) # rubocop:disable Naming/MethodParameterName
-      super :sin, x
+      super x
     end
 
     def to_s
-      "cos(#{operand(1)})"
+      "sin(#{operand(0)})"
     end
 
     protected
